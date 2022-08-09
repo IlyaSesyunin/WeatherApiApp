@@ -25,7 +25,7 @@ struct CurrentWeather {
         case 700...781: return "smoke.fill"
         case 800: return "sun.max.fill"
         case 801...804: return "cloud.fill"
-        default: return "nosign"
+        default: return "nosing"
             
         }
     }
