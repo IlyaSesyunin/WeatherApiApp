@@ -66,20 +66,68 @@
 		09F3674F28A25DC3009779EF /* WeatherApiApp */ = {
 			isa = PBXGroup;
 			children = (
-				09F3675028A25DC3009779EF /* AppDelegate.swift */,
-				09F3675228A25DC3009779EF /* SceneDelegate.swift */,
-				09F3675428A25DC3009779EF /* ViewController.swift */,
+				09F3676F28A2897D009779EF /* Extensions */,
+				09F3677128A289F7009779EF /* View Controllers */,
+				09F3676E28A28881009779EF /* Storyboards */,
+				09F3677028A2899D009779EF /* Models */,
+				09F3677228A28A15009779EF /* Application */,
+				09F3677328A28A3C009779EF /* Resources */,
+			);
+			path = WeatherApiApp;
+			sourceTree = "<group>";
+		};
+		09F3676E28A28881009779EF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				09F3675628A25DC3009779EF /* Main.storyboard */,
+				09F3675B28A25DCA009779EF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		09F3676F28A2897D009779EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				09F3676428A2614E009779EF /* ViewController+AlertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09F3677028A2899D009779EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				09F3676628A26B42009779EF /* NetworkWeatherManager.swift */,
 				09F3676C28A274E8009779EF /* CurrentWeather.swift */,
 				09F3676A28A27191009779EF /* CurrentWeatherData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09F3677128A289F7009779EF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09F3675428A25DC3009779EF /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		09F3677228A28A15009779EF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				09F3675028A25DC3009779EF /* AppDelegate.swift */,
+				09F3675228A25DC3009779EF /* SceneDelegate.swift */,
 				09F3676828A26C80009779EF /* Constants.swift */,
-				09F3675628A25DC3009779EF /* Main.storyboard */,
-				09F3676428A2614E009779EF /* ViewController+AlertController.swift */,
-				09F3675928A25DC9009779EF /* Assets.xcassets */,
-				09F3675B28A25DCA009779EF /* LaunchScreen.storyboard */,
 				09F3675E28A25DCA009779EF /* Info.plist */,
 			);
-			path = WeatherApiApp;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		09F3677328A28A3C009779EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09F3675928A25DC9009779EF /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4STR2A3PL4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApiApp/Info.plist;
+				INFOPLIST_FILE = WeatherApiApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -337,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4STR2A3PL4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherApiApp/Info.plist;
+				INFOPLIST_FILE = WeatherApiApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
